@@ -134,7 +134,7 @@ def post_chat_completions(cfg: JudgeConfig, messages: List[Dict[str, str]]) -> s
         "messages": messages,
         "temperature": cfg.temperature,
         "max_tokens": cfg.max_tokens,
-        "response_format": {"type": "json_object"},  # supported by OpenAI; local servers may ignore
+        "response_format": {"type": "json_object"},  # supported by OpenAI; local llm may ignore
     }
 
     last_err = None
