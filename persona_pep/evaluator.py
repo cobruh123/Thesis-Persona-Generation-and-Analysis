@@ -306,7 +306,7 @@ def run_instruction_evaluation(
                 done.add(key)
                 pbar.update(1)
 
-                # 🔐 CRASH-SAFE SAVE
+                # CRASH-SAFE SAVE
                 safe_append_result(cfg.out_path, results)
 
     except KeyboardInterrupt:
